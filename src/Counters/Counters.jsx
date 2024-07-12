@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import SoloCounter from './components/SoloCounter'
 
 const Counters = () => {
@@ -12,7 +12,7 @@ const Counters = () => {
     }
 
     return (
-        <div>
+        <div style={{height:'100vh', alignContent:'center'}}>
             {
                 counter.map((counter , index) => {
                     return  <SoloCounter key={index} handleCounterInc={() => handleCounterInc(index)} handleCounterDec={() => handleCounterDec(index)} counter={counter}/>
